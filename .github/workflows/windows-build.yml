@@ -1,10 +1,9 @@
 # Check Windows GNU support alongside the existing MSVC build path.
 # This builds and smoke-tests binaries; release packaging stays in release.yml.
+# Run on demand to avoid full Windows builds on every push or PR update.
 name: Windows build
 
 on:
-  push:
-  pull_request:
   workflow_dispatch:
 
 permissions:
